@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+    <StackLayout Grid.Row="1">
+        <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0">
+            <Label Text="Wrzuć swoje dane osobowe, coś tam z nimi zrobimy" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+            <Image x:Name="ImgPhoto" />
+            <Button x:Name="btnCamera" Text="Zrób fotke"></Button>
+            <Entry x:Name="entFirstName" Placeholder="Imię"></Entry>
+            <Entry x:Name="entLastname" Placeholder="Nazwisko"></Entry>
+            <Entry x:Name="entPhoneNr" Placeholder="Numer telefonu" Keyboard="Telephone"></Entry>
+    </StackLayout>
+        <StackLayout Grid.Row="2">
+            <Button x:Name="btn" Text="Zapisz"></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>

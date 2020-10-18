@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "f0eb0f7c-a99b-49a0-8df5-c1276b38f735",
+		"name": "Lab2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Patryk\",\r\n    \"lastName\": \"Araszewski\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lab2araszewski.azurewebsites.net/api/people",
+					"protocol": "https",
+					"host": [
+						"lab2araszewski",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"people"
+					],
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lab2araszewski.azurewebsites.net/api/people",
+					"protocol": "https",
+					"host": [
+						"lab2araszewski",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Del",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://lab2araszewski.azurewebsites.net/api/people/2",
+					"protocol": "https",
+					"host": [
+						"lab2araszewski",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personId\": 5,\r\n    \"firstName\": \"aaa\",\r\n    \"lastName\": \"aaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lab2araszewski.azurewebsites.net/api/people",
+					"protocol": "https",
+					"host": [
+						"lab2araszewski",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"personId\": 5,\r\n    \"firstName\": \"aaa\",\r\n    \"lastName\": \"aaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lab2araszewski.azurewebsites.net/api/people/5",
+					"protocol": "https",
+					"host": [
+						"lab2araszewski",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"people",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

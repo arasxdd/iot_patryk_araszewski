@@ -1,0 +1,34 @@
+﻿@model HatChat.Models.SignInVm;
+@{
+    ViewData["Title"] = "signIn";
+    Layout = "_Layout";
+}
+
+
+
+<div class="row py-5">
+    <div class="col-2"></div>
+    <div class="col-8"> <h2>Welcome to HatChat!</h2> </div>
+    <div class="col-2"></div>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="py2 text-danger font-weight-bold">
+        @Html.ValidationSummary()
+    </div>
+}
+
+<form asp-controller="Home" asp-action="signIn" method="post">
+    <div class="row">
+        <div class="col-10">
+            <input class="form-control" placeholder="Enter username" asp-for="Username" />
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success">Sign In</button>
+        </div>
+    </div>
+</form>
+
+
+

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<input type="hidden" value="@ViewData["username"]" id="username"/>
+
+<div class="row py-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h2>Zalogowany jako: @ViewData["username"]</h2>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-10">
+        <input class="form-control" placeholder="Enter message" id="tbxMsg"/>
+    </div>
+    <div class="col-2">
+        <button class="btn btn-success" id="btnSend">Send</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <ul id="listChat">
+
+        </ul>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="libs/app.js"></script>
+}
